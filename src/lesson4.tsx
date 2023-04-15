@@ -3,6 +3,8 @@
 type stringOrNumber = string | number;
 type stringOrNumberArray = (string | number)[];
 
+//Literal Types,function types
+
 type example40 = {
   name?: string;
   active: boolean;
