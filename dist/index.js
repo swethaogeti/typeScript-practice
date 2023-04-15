@@ -50,6 +50,8 @@ const user = {
 let cid = 1;
 // let custmerId=<string>cid
 let customerId = cid;
+let exampleId = false;
+let exampleId2 = exampleId;
 //=================================================
 //Functions
 function add(a, b) {
@@ -151,4 +153,51 @@ console.log(strArray);
 let objAny = { x: 0 };
 const names = ["Alice", "Bob", "Eve"];
 // Contextual typing for function
-names.forEach((name) => console.log(name.toLowerCase()));
+names.forEach((name) => {
+    console.log(name.toLowerCase());
+});
+names.forEach((s) => {
+    console.log(s.toUpperCase());
+});
+//1
+function example1(name) {
+    console.log("Hello" + name.toUpperCase());
+}
+example1("euywe");
+//2
+function example2() {
+    return 25;
+}
+//object types
+function printCoord(pt) {
+    console.log(pt.x);
+}
+function printName1(obj) {
+    console.log("eiruwie");
+}
+printName1({ frist: "dhsagd" });
+//union Types
+function printId(id) {
+    console.log("your id is:" + id);
+}
+printId(101);
+printId("202");
+function example3(pt) {
+    console.log(pt);
+}
+//type assertion
+const example4 = "hello";
+//literal types
+let changingString = "Hello wworld";
+function printText(s, alignment) {
+    // ...
+}
+printText("Hello, world", "left");
+function dosomething(x) { }
+//functions
+function printToConsole(str) {
+    console.log(str);
+}
+function greeter(fn) {
+    fn("sweety");
+}
